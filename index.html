@@ -9,9 +9,10 @@
   <script type="text/babel">
     const root = document.getElementById("root");
     const App = () => {
-      const [counter, setModifier] = React.useState(0);
+      const [counter, setCounter] = React.useState(0);
       const onClick = () => {
-        setModifier(counter + 1);
+        // setCounter(counter + 1);
+        setCounter((currnet) => currnet + 1);
       };
       return (
         <div>
